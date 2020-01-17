@@ -1,0 +1,153 @@
+
+==============================================
+START : FUNC_BUILD_KERNEL
+==============================================
+
+build common config=exynos9820-beyondx_defconfig 
+build model config= 
+drivers/Kconfig:224:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:5:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:5:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:7:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:8:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:9:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:10:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:11:warning: ignoring unsupported character ''
+#
+# configuration written to .config
+#
+scripts/kconfig/conf  --silentoldconfig Kconfig
+drivers/Kconfig:224:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:5:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:5:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:7:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:8:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:9:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:10:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:11:warning: ignoring unsupported character ''
+  CHK     include/config/kernel.release
+  CHK     include/generated/uapi/linux/version.h
+  CHK     include/generated/utsrelease.h
+  CHK     scripts/mod/devicetable-offsets.h
+kperfmon_DUMMY="olog.pb.h file is missing... retrying"
+cp: cannot stat './../../frameworks/base/proto/src/olog.proto': No such file or directory
+kperfmon_DUMMY=""
+cp: cannot stat './../../vendor/samsung/system/libperflog/aprotoc': No such file or directory
+kperfmon_DUMMY=""
+make[2]: ./drivers/kperfmon/aprotoc: Command not found
+kperfmon_DUMMY=""
+cp: cannot stat './drivers/kperfmon/olog.pb.h': No such file or directory
+kperfmon_DUMMY=""
+kperfmon_DUMMY="olog.pb.h file is missing... again"
+kperfmon_DUMMY="perflog.h file is missing."
+cp: cannot stat './../../system/core/liblog/include/log/perflog.h': No such file or directory
+kperfmon_DUMMY=""
+kperfmon_DUMMY=""
+  CHK     include/generated/timeconst.h
+  CHK     include/generated/bounds.h
+  CHK     include/generated/asm-offsets.h
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      mm/page_alloc.o
+  CC      kernel/locking/mutex.o
+  AR      kernel/locking/built-in.o
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  AR      kernel/built-in.o
+  CC      block/genhd.o
+  CC      mm/vmscan.o
+  CC      drivers/cpufreq/cpufreq.o
+  AR      block/built-in.o
+  AR      drivers/cpufreq/built-in.o
+  AR      mm/built-in.o
+kperfmon_DUMMY="olog.pb.h file is missing... retrying"
+cp: cannot stat './../../frameworks/base/proto/src/olog.proto': No such file or directory
+kperfmon_DUMMY=""
+cp: cannot stat './../../vendor/samsung/system/libperflog/aprotoc': No such file or directory
+kperfmon_DUMMY=""
+make[2]: ./drivers/kperfmon/aprotoc: Command not found
+kperfmon_DUMMY=""
+cp: cannot stat './drivers/kperfmon/olog.pb.h': No such file or directory
+kperfmon_DUMMY=""
+kperfmon_DUMMY="olog.pb.h file is missing... again"
+kperfmon_DUMMY="perflog.h file is missing."
+cp: cannot stat './../../system/core/liblog/include/log/perflog.h': No such file or directory
+kperfmon_DUMMY=""
+kperfmon_DUMMY=""
+  CC      drivers/kperfmon/ologk.o
+  CC      drivers/input/touchscreen/sec_ts/y771/sec_ts.o
+  AR      drivers/kperfmon/built-in.o
+  AR      drivers/input/touchscreen/sec_ts/y771/built-in.o
+  AR      drivers/input/touchscreen/built-in.o
+  AR      drivers/input/built-in.o
+  CC      drivers/samsung/misc/sec_argos.o
+  AR      drivers/samsung/misc/built-in.o
+  AR      drivers/samsung/built-in.o
+  AR      drivers/vision/npu/built-in.o
+  AR      drivers/vision/built-in.o
+  AR      drivers/built-in.o
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  AR      init/built-in.o
+  AR      built-in.o
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+WARNING: modpost: Found 3 section mismatch(es).
+To see full details build your kernel with:
+'make CONFIG_DEBUG_SECTION_MISMATCH=y'
+  KSYM    .tmp_kallsyms1.o
+  KSYM    .tmp_kallsyms2.o
+  LD      vmlinux
+  SORTEX  vmlinux
+  SYSMAP  System.map
+  FIPS : Generating hmac of crypto and updating vmlinux... 
+HMAC for "crypto" module is: b'0abf04b00069cf75d5e31472c8bcac2483b8f5a304edff5eebca817c28cf6d43'
+FIPS integrity procedure has been finished for crypto
+  FIPS : Generating hmac of fmp and updating vmlinux... 
+HMAC for "fmp" module is: b'33035fa94a6e05e38041c03c1040f0c2e31afaabdb287286916f80c78f6d275f'
+FIPS integrity procedure has been finished for fmp
+  OBJCOPY arch/arm64/boot/Image
+  Building modules, stage 2.
+  MODPOST 0 modules
+  GZIP    arch/arm64/boot/Image.gz
+
+=================================
+END   : FUNC_BUILD_KERNEL
+=================================
+
+[3J[H[2J 
+Android Image Kitchen - RepackImg Script
+by osm0sis @ xda-developers
+ 
+Warning: Overwriting existing files!
+ 
+Warning: Using empty ramdisk for repack!
+ 
+Getting build information...
+kernel = boot.img-zImage
+cmdline = androidboot.selinux=permissive androidboot.selinux=permissive
+board = SRPSC04B002KU
+base = 10000000
+pagesize = 2048
+kernel_offset = 00008000
+ramdisk_offset = 01000000
+second_offset = 00f00000
+tags_offset = 00000100
+os_version = 10.0.0
+os_patch_level = 2019-12
+header_version = 1
+hash = sha1
+ 
+Building image...
+ 
+Using format: AOSP
+ 
+Appending footer...
+ 
+Using type: SEAndroid
+ 
+Done!
+rm: cannot remove 'G977.img': No such file or directory
+Total compile time was 145 seconds
